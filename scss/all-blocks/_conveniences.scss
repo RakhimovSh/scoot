@@ -1,0 +1,49 @@
+.conveniences {
+    padding-top: 100px;
+    margin-bottom: 165px;
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item + &__item {
+        margin-top: 155px;
+    }
+    &__inner {
+        max-width: 445px;
+    }
+    &__title {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 24px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;        
+    }
+    &__disc {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        font-family: 'Lexend Deca';
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;        
+    }
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 990px;
+        max-height: 400px;
+    }
+    &__item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
