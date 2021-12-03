@@ -1,0 +1,52 @@
+.hero {
+    padding-bottom: 80px;
+    background-image: url('../../img/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    &__center {
+        position: relative;
+        padding-top: 153px;
+        padding-bottom: 153px;
+    }
+    &__title {
+        max-width: 500px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: $white;
+    }
+    &__disc {
+        max-width: 405px;
+        margin: 0;
+        padding: 0;
+        margin-left: 95px;
+        margin-bottom: 40px;
+        font-family: 'Lexend Deca';
+        font-size: 15px;
+        line-height: 25px;
+        color: $white;
+    }
+    &__btn {
+        margin-left: 95px;
+    }
+    &__img {
+        position: absolute;
+        left: -15%;
+        top: 353px;
+    }
+}
+@media /* only for retina displays */
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url('../img/hero-background@2.jpg');
+    }
+}
