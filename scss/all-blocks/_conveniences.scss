@@ -1,6 +1,6 @@
 .conveniences {
     padding-top: 100px;
-    margin-bottom: 329px;
+    padding-bottom: 329px;
     &__list {
         margin: 0;
         padding: 0;
@@ -45,5 +45,41 @@
     }
     &__item:nth-child(even) {
         flex-direction: row-reverse;
+    }
+}
+@media only screen and (max-width: 1040px) {
+    .conveniences {
+        padding-bottom: 104px;
+        &__item:nth-child(even) {
+            flex-direction: column-reverse;
+        }
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            flex-direction: column-reverse;
+        }
+        &__title {
+            margin-top: 56px;
+            text-align: center;
+        }
+        &__disc {
+            text-align: center;
+        }
+
+    }
+}
+@media only screen and (max-width: 375px) {
+    .conveniences {
+        &__title {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__disc {
+            font-size: 15px;
+            line-height: 25px;
+        }
     }
 }
